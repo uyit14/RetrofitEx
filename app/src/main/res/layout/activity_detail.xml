@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.uytai.retrofit.activity.DetailActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="Detail"
+        android:background="#cec4c4"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"></android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:text="title"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:paddingRight="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/rating_image"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/star"
+                android:tint="@color/colorAccent" />
+
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="5.0" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:text="2016"
+        android:textColor="@color/colorGreyLight" />
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/poster_path"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="300dp"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="description"
+            android:textColor="@color/colorGreyLight" />
+
+    </LinearLayout>
+
+</LinearLayout>
